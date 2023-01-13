@@ -6,6 +6,7 @@ import { RoomsComponent } from './rooms/rooms.component';
 import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 import { PagesComponent } from './pages.component';
 import { SharedModule } from '../shared/shared.module';
+import { AppRoutingModule } from '../app-routing.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SharedModule } from '../shared/shared.module';
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    AppRoutingModule
   ],
   exports: [
     PagesComponent

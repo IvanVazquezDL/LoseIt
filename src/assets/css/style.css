@@ -758,8 +758,7 @@ Main sidebar
   height: 100%;
   top: 0px;
   z-index: 20;
-  padding-top: 70px;
-  background: #fff;
+  background: #242a33;
   -webkit-box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
   box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08); }
 
@@ -841,7 +840,7 @@ sidebar navigation
     margin-top: 6px; }
   .sidebar-nav > ul > li > a.active {
     font-weight: 400;
-    background: #ffffff;
+    background: #242a33;;
     color: #26c6da; }
   .sidebar-nav > ul > li {
     margin-bottom: 5px; }
