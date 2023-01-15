@@ -33,6 +33,16 @@
                 </li>
                 <li> 
                     <a 
+                        [routerLink]="['/weight-tracking']" 
+                        class="waves-effect waves-dark"
+                        routerLinkActive="active"
+                        [routerLinkActiveOptions]="{exact:true}">
+                            <i class="mdi mdi-calendar"></i>
+                            <span class="hide-menu">Weight Tracking</span>
+                    </a>
+                </li>
+                <li> 
+                    <a 
                         [routerLink]="['/rooms']" 
                         class="waves-effect waves-dark"
                         routerLinkActive="active"

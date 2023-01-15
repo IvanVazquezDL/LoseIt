@@ -1,1 +1,22 @@
-<p>dashboard works!</p>
+<h4>Dasboard</h4>
+<hr>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4>Your Maintenance Calories</h4>
+                <h3>{{caloriesPerDay | number:'1.0-0'}} calories per day</h3>
+                <h3>{{caloriesPerDay * 7 | number:'1.0-0'}} calories per week</h3>
+                <hr>
+                <h4>Estimated Ideal Weight</h4>
+                <p>G.J. Hamwi Formula (1964): {{hamwiFormula === 0 ? 'NA' : hamwiFormula | number:'1.0-0'}}</p>
+                <p>B.J. Devine Formula (1974): {{devineFormula === 0 ? 'NA': devineFormula | number:'1.0-0'}}</p>
+                <p>J.D. Robinson Formula (1983): {{robinsonFormula === 0 ? 'NA': robinsonFormula | number:'1.0-0'}}</p>
+                <p>D.R. Miller Formula (1983): {{millerFormula === 0 ? 'NA': millerFormula | number:'1.0-0'}}</p>
+                <hr>
+                <h4>BMI Score: {{bmiScore | number:'1.0-2'}}</h4>
+            </div>
+        </div>
+    </div>
+</div> 

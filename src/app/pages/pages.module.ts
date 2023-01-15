@@ -7,6 +7,8 @@ import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 import { PagesComponent } from './pages.component';
 import { SharedModule } from '../shared/shared.module';
 import { AppRoutingModule } from '../app-routing.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { WeightTrackingComponent } from './weight-tracking/weight-tracking.component';
 
 @NgModule({
   declarations: [
@@ -14,12 +16,15 @@ import { AppRoutingModule } from '../app-routing.module';
     ProfileComponent,
     RoomsComponent,
     NoPageFoundComponent,
-    PagesComponent
+    PagesComponent,
+    WeightTrackingComponent
   ],
   imports: [
     CommonModule,
     SharedModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     PagesComponent
