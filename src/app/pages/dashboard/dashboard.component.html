@@ -2,6 +2,36 @@
 <hr>
 
 <div class="row">
+
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Enter this week's weight</h4>
+                <form class="form p-t-20">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input 
+                                #weight
+                                type="number"
+                                class="form-control"
+                                id="exampleInputuname">
+                        </div>
+                    </div>                    
+                    <button 
+                        type="button" 
+                        (click) = "saveWeightRecord(weight.value)"
+                        class="btn btn-success btn-block waves-effect waves-light m-r-10">
+                        <i class="fa fa-save"></i>
+                        Save
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
     <div class="col-12">
         <div class="card">
             <div class="card-body">

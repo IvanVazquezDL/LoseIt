@@ -9,6 +9,7 @@ import { SharedModule } from '../shared/shared.module';
 import { AppRoutingModule } from '../app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { WeightTrackingComponent } from './weight-tracking/weight-tracking.component';
+import { CreateRoomComponent } from './create-room/create-room.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { WeightTrackingComponent } from './weight-tracking/weight-tracking.compo
     RoomsComponent,
     NoPageFoundComponent,
     PagesComponent,
-    WeightTrackingComponent
+    WeightTrackingComponent,
+    CreateRoomComponent
   ],
   imports: [
     CommonModule,

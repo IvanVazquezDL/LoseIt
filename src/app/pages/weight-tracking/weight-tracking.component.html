@@ -1,1 +1,27 @@
-<p>weight-tracking works!</p>
+<h4>Weekly Weight Tracking</h4>
+<hr>
+
+<div class="col-12">
+    <div class="card">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Weight</th>
+                            <th>Difference</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let weight of weights">
+                            <td>{{weight.dateText}}</td>
+                            <td>{{weight.weight }}</td>
+                            <td>{{weight.difference === 'N/A' ? 'N/A' : weight.difference | number:'1.0-2'}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

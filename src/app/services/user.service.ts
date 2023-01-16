@@ -72,4 +72,8 @@ export class UserService {
     return this.http.put(`${base_url}/users/${this.uid}`, data, this.headers);
   }
 
+  getUserByEmailOrUsername(usernameOrEmail: string) {
+    return this.http.get<any>(`${base_url}/users/${usernameOrEmail}`, this.headers);
+  }
+
 }
