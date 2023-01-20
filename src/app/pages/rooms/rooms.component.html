@@ -14,4 +14,5 @@
 </div>
 
 <h4>Your rooms</h4>
+<h5 *ngFor="let room of rooms" class="cursor" [routerLink]="['/rooms/',room.uid]">{{room.roomName}}</h5>
 <h4>Invitations</h4>

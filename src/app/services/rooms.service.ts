@@ -24,4 +24,12 @@ export class RoomsService {
   createRoom(data: any) {
     return this.http.post(`${base_url}/rooms`, data, this.headers);
   }
+
+  getRoomsByUserId(id: string) {
+    return this.http.get<any>(`${base_url}/rooms/?userId=${id}`, this.headers);
+  }
+
+  getRoomById(id: string) {
+    return this.http.get<any>(`${base_url}/rooms/${id}`, this.headers);
+  }
 }

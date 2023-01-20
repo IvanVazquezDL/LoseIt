@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { RoomsService } from 'src/app/services/rooms.service';
+import { UserService } from 'src/app/services/user.service';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -7,9 +9,20 @@ import Swal from 'sweetalert2';
   styles: [
   ]
 })
-export class RoomsComponent {
+export class RoomsComponent implements OnInit{
 
-  async createRoom() {
+  //  todo: create model
+  rooms!: any[];
+  constructor(
+    private roomService: RoomsService,
+    private userService: UserService) {}
 
+  ngOnInit(): void {
+    this.roomService.getRoomsByUserId(this.userService.uid)
+      .subscribe(resp => {
+        this.rooms = resp.rooms
+      })
   }
+
+
 }
